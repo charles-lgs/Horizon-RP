@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-// import Banner from "../components/Banner.tsx";
+import Banner from "../components/Banner.tsx";
 // import Footer from "../components/Footer.tsx";
 
 // import img from "../assets/images/background7.jpg";
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <div className="main-container">
-        {/* <Banner /> */}
+        <Banner />
         <main>
           <div className="container-image">
             {/* <img className="image" src={img}></img> */}
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     path: "/penal-code",
     element: (
       <div className="main-container">
-        {/* <Banner /> */}
+        <Banner />
         <main></main>
         {/* <Footer /> */}
       </div>
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <div className="main-container">
-        {/* <Banner /> */}
+        <Banner />
         <main></main>
         {/* <Footer /> */}
       </div>
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
     path: "*",
     element: (
       <div className="main-container">
-        {/* <Banner /> */}
+        <Banner />
         <main></main>
         {/* <Footer /> */}
       </div>
