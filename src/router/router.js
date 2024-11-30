@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Banner from "../components/Banner.tsx";
-// import Footer from "../components/Footer.tsx";
+import Footer from "../components/Footer.tsx";
 
-// import img from "../assets/images/background7.jpg";
+import img from "../assets/images/Horizon-rp.jpg";
 
 const router = createBrowserRouter([
   {
@@ -12,10 +12,10 @@ const router = createBrowserRouter([
         <Banner />
         <main>
           <div className="container-image">
-            {/* <img className="image" src={img}></img> */}
+            <img className="image" src={img}></img>
           </div>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     ),
   },
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       <div className="main-container">
         <Banner />
         <main></main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     ),
   },
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       <div className="main-container">
         <Banner />
         <main></main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     ),
   },
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       <div className="main-container">
         <Banner />
         <main></main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     ),
   },

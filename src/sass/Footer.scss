@@ -1,0 +1,36 @@
+@import "setting.scss";
+
+.footer {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 1.5rem 0;
+    width: 100%;
+    max-width: 1920px;
+
+    .footer-content {
+      position: relative;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .copyright {
+      color: #fff;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .gamepad-icon {
+      color: $main-color-orange;
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+}
