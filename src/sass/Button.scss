@@ -1,0 +1,59 @@
+@import "setting.scss";
+
+.animated-button {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: $main-font-orbitron;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: solid 1px $main-color-orange;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $main-color-orange;
+      border: solid 1px #ffffff;
+    }
+  
+    .glow-dot {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: $main-color-orange;
+      filter: blur(4px);
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      animation: moveDot 2.5s linear infinite;
+    }
+}
+  
+@keyframes moveDot {
+    0% {
+      top: -1px;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: calc(100% - 10px);
+    }
+    50% {
+      top: calc(100% - 1px);
+      left: calc(100% - 10px);
+    }
+    75% {
+      top: calc(100% - 1px);
+      left: -10px;
+    }
+    100% {
+      top: -1px;
+      left: -10px;
+    }
+}
+  
+  

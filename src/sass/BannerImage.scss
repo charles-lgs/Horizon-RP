@@ -1,0 +1,53 @@
+@import "setting.scss";
+
+.container-image {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 425px) {
+        height: 75vh;
+    }
+  
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    padding: 1rem;
+  
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      left: 5%;
+    }
+    @media (max-width: 425px) {
+      top: 30%;
+    }
+  
+    &--txt {
+      font-size: $font-size-txt-banner;
+      font-family: $main-font-orbitron;
+      font-weight: 600;
+      color: $white-color;
+      text-shadow: 
+      1px 1px 0 #000,  /* ombre en bas à droite */
+      -1px 1px 0 #000, /* ombre en bas à gauche */
+      1px -1px 0 #000, /* ombre en haut à droite */
+      -1px -1px 0 #000; /* ombre en haut à gauche */
+  
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+}
