@@ -41,7 +41,6 @@
   
       &:hover {
         transform: scale(1.05);
-        color: #fff;
       }
     }
   }
@@ -75,7 +74,7 @@
     background: linear-gradient(
       to right,
       transparent,
-      $main-color-orange,
+      $main-color-orange-opacity,
       transparent
     );
     
