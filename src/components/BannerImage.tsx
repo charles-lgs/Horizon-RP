@@ -2,7 +2,8 @@ import React from 'react'
 import Button from "./Button.tsx";
 import "../sass/BannerImage.scss"
 
-import img from "../assets/images/Horizon-rp.jpg";
+
+const img = require('../assets/images/Horizon-rp.jpg')
 
 const BannerImage = () => {
     return (

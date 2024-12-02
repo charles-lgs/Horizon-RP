@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../sass/Banner.scss';
 
-// const logo = require("../assets/logo-organa.png")
 
 const Banner: React.FC = () => {
   const [visible, setVisible] = useState(true);
@@ -30,10 +29,13 @@ const Banner: React.FC = () => {
     <header className={`banner ${visible ? 'visible' : 'hidden'}`}>
         <div className="banner-content">
             <Link to="/" className="logo-container">
-            <h3 className="logo">Horizon RP</h3>
+            <h3 className="logo">Organa RP</h3>
             </Link>
         
             <nav className="navigation">
+                <Link to="/règlement" className="nav-link">
+                Règlement
+                </Link>
                 <Link to="/penal-code" className="nav-link">
                 Code Pénal
                 </Link>

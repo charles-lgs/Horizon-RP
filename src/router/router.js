@@ -18,6 +18,16 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/règlement",
+    element: (
+      <div className="main-container">
+        <Banner />
+        <main></main>
+        <Footer />
+      </div>
+    ),
+  },
+  {
     path: "/penal-code",
     element: (
       <div className="main-container">
