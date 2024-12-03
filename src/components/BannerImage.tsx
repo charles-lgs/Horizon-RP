@@ -1,14 +1,13 @@
 import React from 'react'
-import Button from "./Button.tsx";
+import Button from "./Button";
 import "../sass/BannerImage.scss"
 
-
-const img = require('../assets/images/Horizon-rp.jpg')
+import image from '../assets/images/organa-rp.webp';
 
 const BannerImage = () => {
     return (
         <section className="container-image">
-            <img className="image" src={img} alt="image d'une voiture roulant vers l'horizon"></img>
+            <img className="image" src={image} alt="une voiture roulant vers l'horizon"></img>
             <div className="container-button">
               <p className="container-button--txt">
                 Tu cherches un endroit où tout est possible ?

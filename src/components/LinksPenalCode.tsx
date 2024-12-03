@@ -1,14 +1,13 @@
 import React from 'react'
 import "../sass/LinksPenalCode.scss"
 
-
-const image = require('../assets/images/Horizon-penal-code.jpg');
+import image from "../assets/images/organa-penal-code.webp"
 
 const LinksPenalCode = () => {
     return (
         <section>
             <div className='section__penal--code-contairer'>
-                <img className='section__penal--code-contairer-img' src={image} alt="image d'un homme" />
+                <img className='section__penal--code-contairer-img' src={image} alt="un homme" />
                 <ul className='section__penal--code-contairer-links'>
                     <li><a className='link' href='#intro'>1. Introduction</a></li>
                     <li><a className='link' href='#mineures'>2. Infractions Mineures</a></li>
