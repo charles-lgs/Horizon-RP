@@ -11,7 +11,7 @@ const BannerImage = () => {
             <img className="image" src={img} alt="image d'une voiture roulant vers l'horizon"></img>
             <div className="container-button">
               <p className="container-button--txt">
-                Tu cherche un endroit où tout est possible ?
+                Tu cherches un endroit où tout est possible ?
               </p>
               <Button onClick={() => console.log("Button clicked!")}>
                 Rejoins Nous !

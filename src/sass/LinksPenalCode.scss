@@ -2,17 +2,22 @@
 
 .section__penal--code-contairer {
     position: relative;
-    height: 70vh;
+    height: 88vh;
     overflow: hidden;
 
     &-img {
         width: 100%;
+        position: relative;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1440px) {
             height: 100%;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 768px) {
             width: auto;
+            left: -70%;
+        }
+        @media (max-width: 425px) {
+            left: -200%;
         }
     }
 
@@ -25,12 +30,12 @@
         background-color: $main-background-color;
         border: solid 1px $main-color-orange;
         border-radius: 5px;
-        top: 25%;
+        top: 30%;
         left: 10%;
         list-style: none;
 
         @media (max-width: 1024px) {
-            top: 25%;
+            // top: 27%;
         }
         @media (max-width: 425px) {
             left: 13%;

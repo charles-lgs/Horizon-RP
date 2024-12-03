@@ -9,6 +9,7 @@
     transition: transform 0.3s ease;
     z-index: 50;
     max-width: 1920px;
+    padding: 0.5rem 0;
   
     &.hidden {
       transform: translateY(-100%);

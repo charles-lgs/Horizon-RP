@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Banner from "../components/Banner.tsx";
 import BannerImage from "../components/BannerImage.tsx";
 import LinksPenalCode from "../components/LinksPenalCode.tsx";
+import PenalCode from "../components/PenalCode.tsx";
 import Footer from "../components/Footer.tsx";
 
 const router = createBrowserRouter([
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
         <Banner />
         <main>
           <LinksPenalCode />
+          <PenalCode />
         </main>
         <Footer />
       </div>
