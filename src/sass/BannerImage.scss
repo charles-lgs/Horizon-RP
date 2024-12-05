@@ -6,12 +6,22 @@
     position: relative;
 
     @media (max-width: 425px) {
-        height: 75vh;
+        // height: 75vh;
     }
   
     .image {
-      width: 100%;
+      position: relative;
       height: 100%;
+      left: 0;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        left: -30%;
+        width: auto;
+      }
+      @media (max-width: 425px) {
+        left: -40%;
+      }
     }
 }
 
@@ -19,24 +29,26 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 2rem;
+    gap: 3rem;
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 25%;
     padding: 1rem;
   
     @media (max-width: 1024px) {
-      align-items: center;
+      // align-items: center;
+      left: 15%;
     }
     @media (max-width: 768px) {
+      align-items: center;
       left: 5%;
     }
     @media (max-width: 425px) {
-      top: 30%;
+      top: 40%;
     }
   
     &--txt {
-      font-size: $font-size-txt-banner;
+      font-size: 3rem;
       font-family: $main-font-orbitron;
       font-weight: 600;
       color: $white-color;
@@ -46,8 +58,18 @@
       1px -1px 0 #000, /* ombre en haut à droite */
       -1px -1px 0 #000; /* ombre en haut à gauche */
   
+      @media (max-width: 1440px) {
+        font-size: 2.4rem;
+      }
+      @media (max-width: 1024px) {
+        font-size: 2rem;
+      }
       @media (max-width: 768px) {
         text-align: center;
       }
+    }
+
+    .button {
+      font-size: 1.3rem;
     }
 }

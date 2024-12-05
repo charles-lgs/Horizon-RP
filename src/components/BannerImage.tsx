@@ -12,7 +12,7 @@ const BannerImage = () => {
               <p className="container-button--txt">
                 Tu cherches un endroit où tout est possible ?
               </p>
-              <Button onClick={() => console.log("Button clicked!")}>
+              <Button className='button' onClick={() => console.log("Button clicked!")}>
                 Rejoins Nous !
               </Button>
             </div>
