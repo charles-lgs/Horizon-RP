@@ -5,12 +5,13 @@
     overflow: hidden;
     position: relative;
 
-    @media (max-width: 425px) {
-        // height: 75vh;
-    }
+    // @media (max-width: 425px) {
+    //     // height: 75vh;
+    // }
   
     .image {
-      position: relative;
+      position: fixed;
+      z-index: -1;
       height: 100%;
       left: 0;
       width: 100%;
@@ -36,7 +37,6 @@
     padding: 1rem;
   
     @media (max-width: 1024px) {
-      // align-items: center;
       left: 15%;
     }
     @media (max-width: 768px) {

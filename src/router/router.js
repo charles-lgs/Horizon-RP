@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Banner from "../components/Banner.tsx";
 import BannerImage from "../components/BannerImage.tsx";
+import AboutHome from "../components/AboutHome.tsx";
 import LinksReglement from "../components/LinksReglement.tsx";
 import Reglement from "../components/Reglement.tsx";
 import LinksPenalCode from "../components/LinksPenalCode.tsx";
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
         <Banner />
         <main>
           <BannerImage />
+          <AboutHome />
         </main>
         <Footer />
       </div>
