@@ -19,6 +19,15 @@
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: jump 1s infinite;
+
+    @media (max-width: 1024px) {
+        right: 1rem;
+    }
+    @media (max-width: 425px) {
+        height: 3rem;
+        width: 3rem;
+        right: 0.6rem;
+    }
     
     &:hover {
       transform: translateY(-2px);
