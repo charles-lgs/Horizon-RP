@@ -89,9 +89,21 @@
 
     &--container-info {
         padding: 1rem 0;
+        text-align: center;
+        font-size: 1.3rem;
 
         @media (max-width: 768px) {
-            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white-color;
+            font-weight: 600;
+
+            &:hover {
+                color: $main-color-orange;
+            }
         }
     }
 }

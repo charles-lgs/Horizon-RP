@@ -99,6 +99,7 @@ const PenalCode = () => {
 
             <div className='penal__code--container-info'>
                 <p><strong>Remarque : </strong>Ce Code Pénal est évolutif et peut être modifié selon les besoins du serveur et des joueurs.</p>
+                <p>Si tu veux lire le code pénal en entier clic : <a href='https://docs.google.com/document/d/1mtk2VZ1VWPwYVMSgV5b71vuTAtnD42dHlL0Mx7_oR_Q/edit?tab=t.0#heading=h.dg3xq4m7924l' target='blank'>ICI</a></p>
             </div>
         </section>
     )
