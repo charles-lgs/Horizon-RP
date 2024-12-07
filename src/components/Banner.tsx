@@ -25,21 +25,28 @@ const Banner: React.FC = () => {
     };
   }, [lastScrollY]);
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <header className={`banner ${visible ? 'visible' : 'hidden'}`}>
         <div className="banner-content">
-            <Link to="/" className="logo-container">
+            <Link to="/" onClick={scrollTop} className="logo-container">
             <h3 className="logo">Organa RP</h3>
             </Link>
         
             <nav className="navigation">
-                <Link to="/règlement" className="nav-link">
+                <Link to="/règlement" onClick={scrollTop} className="nav-link">
                 Règlement
                 </Link>
-                <Link to="/penal-code" className="nav-link">
+                <Link to="/penal-code" onClick={scrollTop} className="nav-link">
                 Code Pénal
                 </Link>
-                <Link to="/about" className="nav-link">
+                <Link to="/about" onClick={scrollTop} className="nav-link">
                     A Propos
                 </Link>
             </nav>
