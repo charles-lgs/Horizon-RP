@@ -6,6 +6,7 @@ import LinksReglement from "../components/LinksReglement.tsx";
 import Reglement from "../components/Reglement.tsx";
 import LinksPenalCode from "../components/LinksPenalCode.tsx";
 import PenalCode from "../components/PenalCode.tsx";
+import About from "../components/About.tsx";
 import Footer from "../components/Footer.tsx";
 import ScrollToTop from "../components/ScrollToTop.tsx";
 
@@ -57,7 +58,9 @@ const router = createBrowserRouter([
     element: (
       <div className="main-container">
         <Banner />
-        <main></main>
+        <main>
+          <About />
+        </main>
         <Footer />
         <ScrollToTop />
       </div>

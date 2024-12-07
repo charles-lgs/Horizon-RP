@@ -1,0 +1,84 @@
+@import "setting.scss";
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 7rem 0;
+    background-color: $midle-grey-color;
+    color: $white-color;
+
+    h1{
+        font-size: 2rem;
+        font-family: $main-font-orbitron;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+    }
+    h2 {
+        font-size: 1.7rem;
+        font-family: $main-font-orbitron;
+        margin-bottom: 1rem;
+        text-decoration: overline;
+    }
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    strong {
+        color: $main-color-orange;
+    }
+    a {
+        text-decoration: none;
+        color: $beige-color;
+        font-family: $main-font-orbitron;
+
+        &:hover {
+            color: $main-color-orange;
+        }
+    }
+
+    &-welcome, &-why, &-job, &-site {
+        width: 70%;
+        text-align: center;
+
+        @media (max-width: 425px) {
+            width: 90%;
+        }
+    }
+
+    &-site {
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding: 1rem;
+            border: solid 1px $main-color-orange;
+            border-radius: 5px;
+
+            @media (max-width: 425px) {
+                width: 95%;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+.star {
+    height: 1rem;
+    width: 1rem;
+    color: $main-color-orange;
+}
+.display {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 425px) {
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
