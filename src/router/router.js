@@ -7,6 +7,7 @@ import Reglement from "../components/Reglement.tsx";
 import LinksPenalCode from "../components/LinksPenalCode.tsx";
 import PenalCode from "../components/PenalCode.tsx";
 import Footer from "../components/Footer.tsx";
+import ScrollToTop from "../components/ScrollToTop.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
           <AboutHome />
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     ),
   },
@@ -32,6 +34,7 @@ const router = createBrowserRouter([
           <Reglement />
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     ),
   },
@@ -45,6 +48,7 @@ const router = createBrowserRouter([
           <PenalCode />
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     ),
   },
@@ -55,6 +59,7 @@ const router = createBrowserRouter([
         <Banner />
         <main></main>
         <Footer />
+        <ScrollToTop />
       </div>
     ),
   },
