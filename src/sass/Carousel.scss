@@ -5,7 +5,6 @@
     width: 100%;
     max-width: 1440px;
     height: 600px;
-    // height: 300px;
     margin: 0 auto;
     overflow: hidden;
     background-color: transparent;
@@ -28,6 +27,10 @@
     transition: all 0.5s ease-in-out;
     opacity: 0.6;
     transform: scale(0.8) translateZ(-100px);
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
   
     &.active {
       width: 1000px;
@@ -36,6 +39,10 @@
       transform: scale(1) translateZ(0);
       transition: all 0.5s ease-in-out;
       z-index: 2;
+
+      @media (max-width: 768px) {
+        height: 300px;
+      }
     }
   
     .carousel-image {
@@ -77,6 +84,10 @@
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 3;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   
     &:hover {
       background: rgba(255, 255, 255, 0.2);
@@ -103,6 +114,11 @@
     transform: translateX(-50%);
     display: flex;
     gap: 0.5rem;
+
+    @media (max-width: 768px) {
+      bottom: 7rem;
+      gap: 1rem;
+    }
 }
   
 .carousel-dot {
@@ -114,6 +130,11 @@
     padding: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    @media (max-width: 768px) {
+      width: 15px;
+      height: 15px;
+    }
   
     &.active {
       background: $main-color-orange;
